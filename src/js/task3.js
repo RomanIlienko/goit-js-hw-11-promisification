@@ -20,8 +20,8 @@ const makeTransaction = transaction => {
   })
 };
 
-const logSuccess = (id, time) => {
-  console.log(`Transaction ${id} processed in ${time}ms`);
+const logSuccess = ([id, time]) => {
+  console.log(`Transaction ${id} processed in ${time} ms`);
 };
 
 const logError = id => {
